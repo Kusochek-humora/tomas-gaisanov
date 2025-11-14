@@ -1,0 +1,38 @@
+{
+  "promo": {
+    "title": {
+      "part1": "Tomas",
+      "part2": "Gaisanov"
+    },
+    "subtitle": "Producer"
+  },
+  "marquee": {
+    "learn": "learn",
+    "write": "write",
+    "ideas": "come up with ideas",
+    "organize": "organize",
+    "fun": "entertain",
+    "film": "film",
+    "share": "share experience"
+  },
+  "nav": {
+    "now": "now",
+    "biography": "BIO & EXPERIENCE",
+    "collaboration": "COLLABORATION",
+    "publicity": "PUBLICITY"
+  },
+  "publicity": {
+    "title": "MANIFESTATIONS",
+    "tab": {
+      "all": "all",
+      "text": "text",
+      "voice": "voice",
+      "video": "video"
+    },
+    "content-type": {
+      "read": "Читать",
+      "voice": "Слушать",
+      "video": "видео"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "promo": {
+    "title": {
+      "part1": "Томас",
+      "part2": "Гайсанов"
+    },
+    "subtitle": "ПРОДЮСЕР"
+  },
+  "marquee": {
+    "learn": "учиться",
+    "write": "писать",
+    "ideas": "придумывать идеи",
+    "organize": "организовывать",
+    "fun": "развлекать",
+    "film": "снимать",
+    "share": "делиться опы,том"
+  },
+
+  "nav": {
+    "now": "сейчас",
+    "biography": "Биография и опыт",
+    "collaboration": "Сотрудничество",
+    "publicity": "Публичность"
+  },
+  "publicity": {
+    "title": "ПРОЯВЛЕНИЯ",
+    "tab": {
+      "all": "все",
+      "text": "текст",
+      "voice": "звук",
+      "video": "видео"
+    },
+    "content-type": {
+      "read": "Читать",
+      "voice": "Слушать",
+      "video": "видео"
+    },
+    "content": {
+      "16.01.24": {
+        "url_text": "Читать",
+        "type":"read",
+        "icon": "tab_read",
+        "text": "Томас Гайсанов о казахстанском стендапе, менталитете и комьюнити «Иногда комик грубо шутит и навлекает на себя проблемы и хейт»: Томас Гайсанов о казахстанском стендапе, менталитете и комьюнити» на мультиплатформенном медиа STEPPE.",
+        "url": "https://the-steppe.com/lyudi/inogda-komik-grubo-shutit-i-navlekaet-na-sebya-problemy-i-kheyt-tomas-gaysanov-o-kazakhstanskom-stendape-mentalitete-i-komyuniti"
+      }
+    }
+  }
+}
