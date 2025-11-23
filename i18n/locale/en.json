@@ -34,5 +34,72 @@
       "voice": "Слушать",
       "video": "видео"
     }
+  },
+  "collaboration": {
+    "title": "collaboration",
+    "text1": "MY CURRENT MAIN PROFESSIONAL FOCUS IS TRANSITIONING FROM ENTERTAINMENT PRODUCTION TO IT ",
+    "text2": "I am passionate about how dynamic creativity and humanities knowledge can blend with digital technologies. ",
+    "text3": {
+      "first": "This website illustrates this interest and experiments with selling expertise —in the form of ",
+      "second": "consultation",
+      "third": "or",
+      "fourth": "execution"
+    },
+    "top": {
+      "text1": {
+        "title": "Personal Brand and Media Image",
+        "p": "This is for individuals and communities looking to define and express their uniqueness through media channels."
+      },
+      "text2": {
+        "title": "Creative Career",
+        "p": "When faced with challenges in development—be they psychological, infrastructural, or conceptual—we will find a way forward"
+      },
+      "text3": {
+        "title": "Other",
+        "p": "Or something else where that might be useful: let's dive into the world of transforming education, delve into the cultural diversity of the Caucasus region, and contemplate the nature of Creativity."
+      },
+      "text4": {
+        "title": "Shows and Podcasts",
+        "p": "Advice on strengthening existing or planned content, including conceptual, substantive, and management aspects."
+      },
+      "text5": {
+        "title": "Stand-Up",
+        "p": "This is for individuals actively performing, managing, or interested in understanding comedic skills — authorial, artistic, and production-related."
+      }
+    },
+    "bot": {
+      "text1": {
+        "title": "Conceptualizing Media Projects",
+        "p": "Developing creative concepts for show projects, educational media, advertising, promotional activities, and other meaningful content."
+      },
+      "text2": {
+        "title": "Event Management",
+        "p": "Planning and conducting entertainment and educational events."
+      },
+      "text3": {
+        "title": "Conflict Mediation",
+        "p": "Theoretical and practical mediation assistance in resolving conflicts, including media-related conflicts."
+      },
+      "text4": {
+        "title": "Scripts (Any Format)",
+        "p": "We can work with any script format. If we can’t do it, we will find good performers."
+      },
+      "text5": {
+        "title": "Turnkey Filming",
+        "p": "Content production at all stages or assistance in managing processes."
+      }
+    },
+    "con-subtitle-top": "CONSULTATION",
+    "con-subtitle-bot": "Execution",
+    "features": {
+      "item1": "Online-call",
+      "item2": "Correspondence",
+      "item3": "Live sessions",
+      "item4": "Lectures / Speeches",
+      "item5": "MIRO board",
+      "item6": "Presentation",
+      "item7": "Text"
+    },
+    "send-to-teg": "Message in Telegram"
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div :class="['wrapper', { 'wrapper--scroll': pageScroll }]">
     <Header>
       <template #logo>
         <NuxtLink
@@ -54,10 +54,13 @@
 import { ref } from "vue";
 import Header from "./components/Header.vue";
 import Navigation from "./components/Navigation.vue";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+import { useNuxtApp } from "#app";
 const closeMenu = () => {
   isMenuOpen.value = false;
 };
-const isMenuOpen = ref(true);
+const isMenuOpen = ref(false);
 
 function toggleMenu() {
   console.log("toggle clicked"); // <-- проверь, срабатывает ли
@@ -68,8 +71,24 @@ const { finalizePendingLocaleChange } = useI18n();
 const onBeforeEnter = async () => {
   await finalizePendingLocaleChange();
 };
+
+const route = useRoute();
+const nuxtApp = useNuxtApp();
+
+// Достаём meta.scroll из маршрута
+const pageScroll = computed(() => {
+  return Boolean(route.meta.scroll);
+});
 </script>
 <style lang="scss">
+.wrapper {
+  overflow-y: hidden; /* твой текущий стиль */
+  height: 100vh;
+  &.wrapper--scroll {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 .nav-toggler {
   display: flex;
   @media screen and (max-width: 1023px) {
@@ -78,9 +97,7 @@ const onBeforeEnter = async () => {
 }
 .nav-toggler.active {
   display: flex !important;
-  @media (mix-width: 1024px) {
-    display: flex;
-  }
+
 }
 .mobile-navigation {
   display: none;

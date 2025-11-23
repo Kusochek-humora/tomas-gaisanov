@@ -3,12 +3,30 @@ import { useI18n } from "vue-i18n";
 import Icon from "./UI/Icon.vue";
 import LangSwitcher from "./LangSwitcher.vue";
 import Socials from "./Socials.vue";
+import { ref } from "vue";
 const { t } = useI18n(); // для перевода текста
 const emit = defineEmits(["nav-click"]);
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+const isMenuOpen = ref(true);
 </script>
 
 <template>
-  <nav class="nav">
+  <nav
+    class="nav"
+
+  >
+    <button
+      class="burger"
+      @click.native="emit('nav-click')"
+    >
+      <img
+        class="burger__svg"
+        src="../assets/images/close-burger.svg"
+        alt="Close menu"
+      />
+    </button>
     <LangSwitcher class="mobile"></LangSwitcher>
     <Socials class="mobile__social mobile"></Socials>
     <ul class="nav__list">
@@ -80,9 +98,31 @@ const emit = defineEmits(["nav-click"]);
     display: flex !important;
   }
 }
-::v-deep(.mobile__social) {
-  display: flex;
-  gap: 10px;
+// ::v-deep(.mobile__social) {
+//   display: flex;
+//   gap: 10px;
+// }
+.burger {
+  background-color: transparent;
+  width: 67px;
+  height: 45px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+  }
+  &__svg {
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 .nav {
   position: fixed;
@@ -90,10 +130,11 @@ const emit = defineEmits(["nav-click"]);
   bottom: 0;
   z-index: 1;
   width: 100%;
-
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 28px;
   @media (max-width: 1024px) {
     position: fixed;
-    top: 135px;
+
     left: 0;
     width: 100%;
     height: 100vh;
@@ -104,6 +145,7 @@ const emit = defineEmits(["nav-click"]);
     gap: 30px;
     flex-direction: column;
     z-index: 100;
+    padding-top: 100px;
   }
   &__list {
     max-width: 1140px;

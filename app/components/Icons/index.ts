@@ -17,6 +17,13 @@ import TextBtnTrigger from "./TextBtnTrigger.vue";
 import VoiceBtnTrigger from "./VoiceBtnTrigger.vue";
 import VideoBtnTrigger from "./VideoBtnTrigger.vue";
 import None from "./None.vue";
+import ConChat from "./ConChat.vue";
+import ConLecture from "./ConLecture.vue";
+import ConLive from "./ConLive.vue";
+import ConMiro from "./ConMiro.vue";
+import ConOnline from "./ConOnline.vue";
+import ConPresentation from "./ConPresentation.vue";
+import ConText from "./ConText.vue";
 
 export const icons = {
   vk: VkIcon,
@@ -38,6 +45,13 @@ export const icons = {
   tab_listen: VoiceBtnTrigger,
   tab_watch: VideoBtnTrigger,
   none: None,
+  con_chat: ConChat,
+  con_lecture: ConLecture,
+  con_live: ConLive,
+  con_miro: ConMiro,
+  con_online: ConOnline,
+  con_presentation: ConPresentation,
+  con_text: ConText,
 } as const;
 
 export type IconName = keyof typeof icons;

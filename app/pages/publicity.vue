@@ -413,5 +413,6 @@ width: 120px;
       fill: rgba(21, 21, 21, 1);
     }
   }
+  
 }
 </style>
